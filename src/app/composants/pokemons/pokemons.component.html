@@ -1,0 +1,16 @@
+<p>Les six premiers Pokémons : </p>
+<p>6 pokémons en base de donéés</p>
+
+<div>
+  <div  *ngFor="let p of pokemons">
+    <img [src]="p.image" [alt]="p.nom"/>
+    <p>{{p.identifiant}}</p>
+    <p>Nom : {{p.nom}}</p>
+    <p>Catégorie : {{p.categorie}}</p>
+    <p>Type : {{p.type}}</p>
+    <p>Taille : {{p.taille}} m</p>
+    <p>Poids: {{p.poids}} kg</p>
+  </div>
+</div>
+
+
