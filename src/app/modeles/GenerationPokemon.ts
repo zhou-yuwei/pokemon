@@ -1,17 +1,17 @@
 import {Pokemon} from "./Pokemon";
 
 export class GenerationPokemon {
-  private _generation: string;
+  private _generation: number;
 
-  constructor(generation: string) {
+  constructor(generation: number) {
     this._generation = generation;
   }
 
-  get generation(): string {
+  get generation(): number {
     return this._generation;
   }
 
-  set generation(value: string) {
+  set generation(value: number) {
     this._generation = value;
   }
 

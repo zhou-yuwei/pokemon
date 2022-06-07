@@ -17,5 +17,8 @@ export class GenerationsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+  public filtre(generationSelected: GenerationPokemon): void {
+    this.svc.uneGeneration(generationSelected);
+    console.log(generationSelected);
+  }
 }
